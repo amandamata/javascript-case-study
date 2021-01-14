@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Negociações</title>
-    <link rel="stylesheet" href="../client/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="../client/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     
 </head>
 <body class="container">
@@ -58,6 +58,14 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src='../client/js/index.js'></script>
+    <script src='js/app/models/Negotiation.js'></script>
+    <script>
+        let negotiation = new Negotiation(new Date(), 5, 20);
+        console.log(negotiation);
+        console.log(negotiation.volume);
+        console.log(negotiation.date);
+        console.log(negotiation.price);
+        console.log(negotiation.quantity);
+    </script>
 </body>
 </html>
