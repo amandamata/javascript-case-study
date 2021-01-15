@@ -22,4 +22,4 @@ class Negotiation {
     get price(){
         return this._price;
     }
-} 
+}

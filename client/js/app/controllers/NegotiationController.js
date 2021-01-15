@@ -9,18 +9,11 @@ class NegotiationController {
 
     add(event){
         event.preventDefault();
+
         let negotiation = new Negotiation(
-            this.transformDate(this._inputDate.value), 
+            DateHelper.transformDate(this._inputDate.value), 
             this._inputQuantity.value,
             this._inputPrice.value
-        );
-        console.log(negotiation);
-    }
-
-    transformDate(date){
-        return new Date(...date
-            .split('-')
-            .map((item, index) =>  item - index % 2)
         );
     }
 }
